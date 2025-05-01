@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TextArea fx:id="operationalTextField" layoutX="84.0" layoutY="115.0" prefHeight="186.0" prefWidth="374.0" />
-      <TextArea fx:id="resultingTextField" layoutX="84.0" layoutY="368.0" prefHeight="246.0" prefWidth="374.0" />
-      <Button fx:id="fileSubmitButton" layoutX="406.0" layoutY="36.0" mnemonicParsing="false" onAction="#fileSubmitButtonHandler" text="Submit" />
-      <Label fx:id="fileLocationText" layoutX="177.0" layoutY="40.0" prefHeight="17.0" prefWidth="222.0" />
+      <Label fx:id="fileLocationText" layoutX="163.0" layoutY="40.0" prefHeight="17.0" prefWidth="294.0" />
       <Button fx:id="exportToFileButton" disable="true" layoutX="372.0" layoutY="336.0" mnemonicParsing="false" onAction="#exportToFileButtonHandler" text="Export to file" />
       <Button fx:id="submitPatternButton" layoutX="389.0" layoutY="75.0" mnemonicParsing="false" onAction="#submitPatternButtonHandler" prefHeight="25.0" prefWidth="69.0" text="Submit" />
-      <TextField fx:id="regexField" layoutX="177.0" layoutY="75.0" prefHeight="25.0" prefWidth="208.0" promptText="Enter match text or pattern here" />
-      <ComboBox fx:id="selectOperationComboBox" layoutX="85.0" layoutY="75.0" onAction="#selectOperationComboBoxHandler" prefHeight="25.0" prefWidth="88.0" />
+      <TextField fx:id="regexField" layoutX="84.0" layoutY="75.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter match text or pattern here" />
       <Button fx:id="findPatternButton" disable="true" layoutX="467.0" layoutY="116.0" mnemonicParsing="false" onAction="#findPatternButtonHandler" prefHeight="25.0" prefWidth="58.0" text="Find" />
       <Button fx:id="findAllPatternButton" disable="true" layoutX="467.0" layoutY="182.0" mnemonicParsing="false" onAction="#findAllPatternButtonHandler" prefHeight="25.0" prefWidth="58.0" text="Find All" />
       <Button fx:id="replacePatternButton" disable="true" layoutX="467.0" layoutY="215.0" mnemonicParsing="false" onAction="#replacePatternButtonHandler" text="Replace" />
       <BottomNavigationButton fx:id="selectFileButton" layoutX="85.0" layoutY="36.0" onAction="#selectFileButtonHandler" prefHeight="25.0" prefWidth="84.0" text="Choose File:" />
       <Button fx:id="matchPatternButton" disable="true" layoutX="467.0" layoutY="149.0" mnemonicParsing="false" onAction="#matchPatternButtonHandler" prefHeight="25.0" prefWidth="58.0" text="Match" />
+      <Button layoutX="84.0" layoutY="36.0" mnemonicParsing="false" text="Select File:" />
+      <ScrollPane layoutX="84.0" layoutY="366.0" prefHeight="200.0" prefWidth="374.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="360.0">
+               <children>
+                  <Label fx:id="resultsLabel" layoutX="14.0" layoutY="20.0" prefHeight="17.0" prefWidth="329.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>
