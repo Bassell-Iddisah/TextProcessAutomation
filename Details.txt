@@ -1,31 +1,31 @@
 Text Process Automation System
 
 	Main Tasks:
-1. Advanced Text search & extraction:
-    Regex to find and extract from files.
-    Dynamic search, match, and replace text.
+1. Advanced Text search & extraction: ✅
+    Regex to find and extract text from files. ✅
+    Dynamic search, match, and replace text. ✅
 
-2. Automated file processing:
-    File reading & writing [BufferedReader, BufferedWriter]
-    Batch processing [data cleanup and formatting]
+2. Automated file processing: ✅
+    File reading & writing [BufferedReader, BufferedWriter] ✅
+    Batch processing [data cleanup and formatting] ✅
 
-3. Optimized data processing with streams:
-    Streams API to filter, transform and aggregate large volumes of text.
+3. Optimized data processing with streams: ✅
+    Streams API to filter, transform and aggregate large volumes of text. ✅
     Word frequency analysis, pattern recognition, text summarization [map-reduce techniques]
 
 4. Robust Error handling and logging:
     Invalid inputs, File errors, System failures.
     Logging to track processing performance, error reports, and system activity for debugging and monitoring
 
-5. Regular expressions module:
-    Search, Match, and Replace text with regex.
+5. Regular expressions module: ✅
+    Search, Match, and Replace text with regex. ✅
     Support for sets, ranges, alternations, shorthands, and quantifiers in regex patterns.
-    UI for regex patterns and text data.
+    UI for regex patterns and text data. ✅
 
-6. Text Processing Module:
-    Search for patterns and replace characters in text data with regex.
-    Use Java's Pattern and Matcher classes
-    Display match results and replaced text to user.
+6. Text Processing Module: ✅
+    Search for patterns and replace characters in text data with regex. ✅
+    Use Java's Pattern and Matcher classes ✅
+    Display match results and replaced text to user. ✅
 
 7. Data management module:
     Java collections for managing collections of data.
@@ -34,5 +34,5 @@ Text Process Automation System
 
 8. User Interface:
     JavaFX interface
-    Options to input data, regex patterns, and perform operations.
-    Display results of regex operations and collection manipulations to user.
+    Options to input data, regex patterns, and perform operations. ✅
+    Display results of regex operations and collection manipulations to user. ✅

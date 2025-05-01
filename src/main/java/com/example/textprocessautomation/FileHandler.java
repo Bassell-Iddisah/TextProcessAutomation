@@ -5,11 +5,23 @@ import java.nio.file.*;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class FileHandler {
 
     // Read a file submitted by a user
+
     public static String readFile(String filePath) throws IOException {
-        return Files.readString(Path.of(filePath));
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader br=new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                content.append(line).append(System.lineSeparator());
+            }
+        }catch (IOException e) {
+            Logger.logError("Error reading file: " + filePath, e);
+        }
+//        return Files.readString(Path.of(filePath));
+        return content.toString();
     }
 
     // Write to the file
