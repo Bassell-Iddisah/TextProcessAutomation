@@ -23,7 +23,7 @@ public class TextAnalyzer {
     }
 
     //
-    public static void summarizeText(String text) {
+    public static void analyzeText(String text) {
         long wordCount = Arrays.stream(text.split("\\W+"))
                 .filter(word -> !word.isBlank()).count(); // Total number of words in text
 
