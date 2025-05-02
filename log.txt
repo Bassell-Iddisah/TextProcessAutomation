@@ -1,0 +1,2 @@
+2025-05-01T11:18:32.475260 [ERROR] Error reading file: jkal
+    java.io.FileNotFoundException: jkal (The system cannot find the file specified)
